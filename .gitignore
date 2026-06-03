@@ -1,0 +1,30 @@
+# Dependencies
+node_modules/
+react-dashboard/node_modules/
+backend/node_modules/
+
+# Environment Variables
+.env
+react-dashboard/.env
+backend/.env
+
+# Build Files
+dist/
+build/
+react-dashboard/dist/
+backend/dist/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+# OS Files
+.DS_Store
+Thumbs.db
+
+# VS Code
+.vscode/
+
+# Coverage
+coverage/
