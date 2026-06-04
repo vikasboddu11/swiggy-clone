@@ -93,7 +93,7 @@ function AllProducts() {
               >
 
                 <img
-                  src={`http://localhost:3000/api/uploads/${item.image}`}
+                  src={`${import.meta.env.VITE_API_URL}/${item.image}`}
                   alt={item.restaurentName}
                   className="w-[220px] h-[150px] object-cover rounded-t-lg"
                 />
@@ -146,7 +146,7 @@ function AllProducts() {
               >
 
                 <img 
-                  src={`http://localhost:3000/api/uploads/${item.image}`} 
+                  src={`${import.meta.env.VITE_API_URL}/${item.image}`} 
                   alt={item.productName} 
                   className="w-full h-[180px] object-cover rounded-t-lg"
                 />

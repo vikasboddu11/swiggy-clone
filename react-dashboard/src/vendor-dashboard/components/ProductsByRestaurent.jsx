@@ -58,7 +58,7 @@ function ProductsByRestaurent() {
             <div key={product._id} className="bg-white shadow rounded-lg">
 
               <img 
-              src={`http://localhost:3000/api/uploads/${product.image}`} 
+                src={`${import.meta.env.VITE_API_URL}/${product.image}`} 
               alt={product.productName}
               className="w-full h-[180px] object-cover rounded-t-lg"
               onClick={() => handleAddToCart(product._id)}

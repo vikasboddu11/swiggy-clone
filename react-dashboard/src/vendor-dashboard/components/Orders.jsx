@@ -65,7 +65,7 @@ function Orders() {
                             <div className="flex items-center gap-3">
 
                               <img
-                                src={`http://localhost:3000/api/uploads/${item.image}`}
+                                src={`${import.meta.env.VITE_API_URL}/${item.image}`}
                                 alt={item.name}
                                 className="w-14 h-14 rounded-lg object-cover border"
                               />

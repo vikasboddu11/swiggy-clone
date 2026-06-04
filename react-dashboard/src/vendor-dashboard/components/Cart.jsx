@@ -104,7 +104,7 @@ function Cart() {
 
                     <div className="w-[120px] h-[100px] flex-shrink-0">
                       <img 
-                        src={`http://localhost:3000/api/uploads/${item.product?.image}`} 
+                        src={`${import.meta.env.VITE_API_URL}/${item.product?.image}`} 
                         alt={item.product?.productName} 
                         className="w-full h-full object-cover rounded-lg"
                       />

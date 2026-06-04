@@ -55,7 +55,7 @@ function UserProductsByRestaurent() {
               {/* ✅ Wrapper added ONLY for positioning buttons */}
               <div className="relative">
                 <img 
-                  src={`http://localhost:3000/api/uploads/${product.image}`} 
+                  src={`${import.meta.env.VITE_API_URL}/${product.image}`} 
                   alt={product.productName}
                   className="w-full h-[180px] object-cover rounded-t-lg"
                 />

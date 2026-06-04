@@ -81,7 +81,7 @@ function Profile({ user }) {
 
                 <div className="relative">
                   <img
-                    src={`http://localhost:3000/api/uploads/${hotel.image}`}
+                    src={`${import.meta.env.VITE_API_URL}/${hotel.image}`}
                     alt={hotel.restaurentName}
                     className="w-full h-[180px] object-cover rounded-t-lg"
                   />
